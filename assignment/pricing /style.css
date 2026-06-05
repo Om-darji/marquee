@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    
+    background-image: url("https://images.unsplash.com/photo-1620121684840-edffcfc4b878?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXBwbGUlMjB3YWxscGFwZXJzfGVufDB8fDB8fHww");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    height: 95%;
+    max-height: 900px; 
+    width: 95%;
+    max-width: 1400px;
+    
+    border: 15px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 25px;
+    background-clip: padding-box; 
+    backdrop-filter: blur(10px);
+
+    background-color:#F5F6F8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    height: 15%;
+    width: 100%; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    color: #1f1f1f;
+    font-size: 32px;
+}
+
+.card-container {
+    height: 85%;
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price-card {
+    height: 100%;
+    width: 350px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-div {
+    margin: 15px 15px 0 15px;
+    border-radius: 20px;
+    background-color: #F0EDFF;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+}
+
+.relative-box {
+    position: relative; 
+}
+
+.plan-name {
+    color: #1f1f1f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.plan-desc {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+    height: 80px; 
+}
+
+.price-box {
+    margin: 20px 0;
+}
+
+.price {
+    font-size: 28px;
+    color: #1f1f1f;
+}
+
+.per-month {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.billed-yearly {
+    color: #777;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.choose-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6C5CE7; 
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.feature-list {
+    width: 100%;
+    padding: 70px 30px;
+    flex-grow: 1; 
+}
+
+.feature-list h4 {
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.feature-list ul {
+    list-style: none; 
+    
+}
+
+.feature-list li {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+}
+
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.icon.empty {
+    border: 1.5px solid #aaa;
+}
+
+.icon.check {
+    background-color: #aaa;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+@media(max-width:1400px) {
+    .main {
+        width: 100%;
+    }
+}
